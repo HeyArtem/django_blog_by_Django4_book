@@ -1,0 +1,585 @@
+Собираю проект простого блога по книге
+
+$ mkdir ... 
+$ cd ...
+
+$ python3 -m venv my_env
+$ source my_env/bin/activate
+
+$ pip install -U pip setuptools
+$ pip install django Pillow
+        
+$ django-admin startproject ... — создал проект
+
+$ cd mysite/
+
+$ python manage.py migrate
+
+python manage.py runserver
+
+python manage.py startapp blog
+
+создаю модель
+
+Активация приложения in settings
+'blog.apps.BlogConfig',
+
+Добавление поля статуса
+Для того чтобы получать имеющиеся варианты, можно обращаться к вари-
+антам статуса (Post.Status.choices), для того чтобы получать удобочитаемые
+имена – к меткам статуса (Post.Status.labels), и для того чтобы получать
+фактические значения вариантов – к значениям статуса (Post.Status.values).
+В модель также было добавлено новое поле status, являющееся экземп-
+ляром типа CharField. Оно содержит параметр choices, чтобы ограничивать
+значение поля вариантами из Status.choices.
+        
+        Давайте посмотрим, как взаимодействовать с вариантами статуса.
+        Выполните следующую ниже команду в командной оболочке, чтобы от-
+        крыть оболочку Python:
+
+        $ python manage.py shell
+        Python 3.8.10 (default, Mar 13 2023, 10:26:41) 
+        [GCC 9.4.0] on linux
+        Type "help", "copyright", "credits" or "license" for more information.
+        (InteractiveConsole)
+        >>> from blog.models import Post
+        >>> Post.Status.choices
+        [('DF', 'Draft'), ('PB', 'Published')]
+        >>> Post.Status.labels
+        ['Draft', 'Published']
+        >>> Post.Status.values
+        ['DF', 'PB']
+        >>> Post.Status.values
+        ['DF', 'PB']
+        >>> Post.Status.names
+        ['DRAFT', 'PUBLISHED']
+        >>> 
+
+
+Добавление взаимосвязи многие-к-одному
+        author = models.ForeignKey(User,
+                                       on_delete=models.CASCADE,
+                                       related_name='blog_posts')
+                               
+                               
+
+Создание и применение миграций
+Команда migrate применяет миграции ко всем приложениям, перечислен-
+ным в INSTALLED_APPS. Она синхронизирует базу данных с текущими моделя-
+ми и существующими миграциями.
+
+python manage.py makemigrations blog
+        
+        чтобы про-
+        инспектировать результирующий исходный код SQL вашей первой мигра-
+        ции:
+            $ python manage.py sqlmigrate blog 0001                   
+                               
+
+синхронизируем базу данных с новой моделью.
+$ python manage.py migrate
+Мы только что применили миграции приложений, перечисленных в IN-
+STALLED_APPS, включая приложение blog.
+После применения миграций база данных отражает текущее состояние
+моделей.
+Если вы внесете в файл models.py любые правки, чтобы добавить, удалить
+либо изменить поля существующих моделей, либо добавите новые модели,
+то вам придется создать новые миграции, снова применив команду makemi-
+grations. Каждая миграция дает Django возможность отслеживать изменения
+модели. Затем нужно применить миграцию командой migrate, чтобы синхро-
+низировать базу данных с моделями.
+
+
+Создание сайта администрирования
+для моделей
+$ python manage.py createsuperuser
+
+
+Сайт администрирования
+$ python manage.py runserver
+Войдите на сайт администрирования
+
+Добавление моделей на сайт администрирования
+admin.py
+                       
+        from .models import Post
+        
+        admin.site.register(Post)                          
+Теперь перезагрузите сайт администрирования в своем браузере. Вы долж-
+ны увидеть свою модель Post на сайте, как показано ниже:   
+        Кликните по ссылке Add (Добавить) напротив Posts (Посты), чтобы до-
+бавить новый пост.
+        Заполните форму и кликните по кнопке Save (Сохранить).                    
+        
+
+Адаптация внешнего вида моделей
+под конкретно-прикладную задачу
+Отредактируйте файл admin.py приложения blog, изменив его, как показано
+ниже. Новые строки выделены жирным шрифтом:
+        from django.contrib import admin
+        from .models import Post
+        @admin.register(Post)
+        class PostAdmin(admin.ModelAdmin):
+                list_display = ['title', 'slug', 'author', 'publish', 'status']
+                               
+                               
+                               
+        @admin.register(Post)
+        class PostAdmin(admin.ModelAdmin):
+            list_display = ['title', 'slug', 'author', 'publish', 'status']
+            list_filter = ['status', 'created', 'publish', 'author']
+            search_fields = ['title', 'body']
+            prepopulated_fields = {'slug': ('title',)}
+            raw_id_fields = ['author']
+            date_hierarchy = 'publish'
+            ordering = ['status', 'publish']                               
+                               
+                               
+                               
+РАБОТА С НАБОРАМИ ЗАПРОСОВ QUERYSET
+И МЕНЕДЖЕРАМИ
+Встроенный в Django объектно-реляционный преобразователь ORM (OB-
+JECT-RELATIONAL MAPPER) – это мощный API абстракции базы данных, кото-
+рый позволяет легко создавать, извлекать, обновлять и удалять объекты 1 .
+ORM-преобразователь дает возможность генерировать запросы на языке
+SQL, используя объектно-ориентированную парадигму Python. Его можно
+трактовать как способ взаимодействия с базой данных в Python’овском стиле
+вместо написания сырых SQL-запросов.       
+        ORM-преобразователь совместим с реляционными
+системами управления базами данных MySQL, PostgreSQL, SQLite, Oracle
+и MariaDB.
+
+        python manage.py shell
+        
+
+        from blog.models import Post
+        user = User.objects.get(username='admin')
+        post = Post(title='Another post',
+        slug='another-post',
+        body='Post body.',
+        author=user)
+        post.save()       
+        
+        НЕ РАБОТАЕТ У МЕНЯ!!                        
+
+
+пробую сам задавать команды:
+        >>> from blog.models import Post
+        >>> info = Post.objects.all()
+        >>> print(info)
+        <QuerySet [<Post: Повседневная практика>, <Post: first post>, <Post: second post>]>
+        
+        
+        в админке сайта создал пользователя test_admin,пробую
+        >>> from blog.models import Post
+        >>> user = User.objects.get(username='test_admin')
+        Traceback (most recent call last):
+          File "<console>", line 1, in <module>
+        NameError: name 'User' is not defined
+        >>> 
+        
+        Все равно ошибка
+
+
+
+Разновидности запросов
+        *Одиночный объект извлекается из базы данных методом get(). Мы примени-
+ли этот метод посредством метода Post.objects.get() 
+Каждая модель Django имеет по меньшей мере один модельный менеджер, а менеджер, который применяется по умолчанию, называется objects.
+
+        *all_posts = Post.objects.all()
+Обратите внимание, что этот QuerySet еще не исполнен. 
+Наборы запросов QuerySet в Django являются ленивыми, то есть они вычисля-
+ются только тогда, когда это приходится делать.
+
+        *Post.objects.all()
+Если не назначать набор
+запросов QuerySet переменной, а вместо этого писать его непосредственно
+в оболочке Python, то инструкция SQL набора запросов будет исполняться,
+потому что вы побуждаете ее генерировать результат
+
+        *Post.objects.filter(publish__year=2022)
+Для фильтрации набора запросов QuerySet можно использовать метод fil-
+ter() менеджера. Например, все посты, опубликованные в 2022 году
+
+        *Post.objects.filter(publish__year=2022, author__username='admin')
+все посты, опубликованные в 2022 году автором с пользовательским именем
+admin, можно получить следующим образом:
+
+        *Post.objects.filter(publish__year=2022) \
+                .filter(author__username='admin')
+
+
+Применение метода exclude()
+
+        *Post.objects.filter(publish__year=2022) \
+                .exclude(title__startswith='Why')
+Определенные результаты можно исключать из набора запросов QuerySet,
+используя метод exclude() менеджера. Например, все посты, опубликованные
+в 2022 году, заголовки которых не начинаются со слова Why (Почему)
+
+Применение метода order_by()
+        *Post.objects.order_by('title')
+Используя метод order_by() менеджера, можно упорядочивать результаты по
+разным полям. Например, можно извлечь все объекты, упорядоченные по их
+полю title
+
+        *Post.objects.order_by('-title')
+Убывающий порядок указывается с по мощью префикса с отрицательным знаком
+                
+
+Удаление объектов
+        *post = Post.objects.get(id=1)
+        post.delete()
+удалить объект. Обратите внимание, что удаление объектов также приводит к удалению любых зависимых взаимосвязей объектов ForeignKey, в случае если параметр on_delete задан равным значению CASCADE.
+
+
+СОЗДАНИЕ МОДЕЛЬНЫХ МЕНЕДЖЕРОВ
+Есть два способа добавлять или адаптировать модельные менеджеры под
+конкретно-прикладную задачу: 
+
+-можно добавлять дополнительные методы менеджера в существующий менеджер
+        Post.objects.my_manager()
+        
+-создавать новый менеджер, видоизменив изначальный набор запросов QuerySet, возвращаемый менеджером. 
+        Post.my_manager.all()
+        
+Мы выберем второй метод, чтобы реализовать менеджер, который позволит извлекать посты, используя обозначение Post.published.all().
+
+        class PublishedManager(models.Manager):
+            def get_queryset(self):
+                return super().get_queryset()\
+                .filter(status=Post.Status.PUBLISHED)
+                
+                
+         
+        # поля модели
+        ...
+        """
+        Первый объявленный в модели менеджер становится менеджером, ко-
+        торый используется по умолчанию. Для того чтобы указать другой такой
+        менеджер, применяется Meta-атрибут default_manager_name. Если менеджер
+        в модели не определен, то Django автоматически создает для нее стандарт-
+        ный менеджер objects. Если в своей модели вы объявляете какие-либо менед-
+        жеры, но также хотите сохранить менеджер objects, то вы должны добавить
+        его в свою модель явным образом. В приведенном выше исходном коде мы
+        добавили в модель Post стандартный менеджер objects и конкретно-при-
+        кладной менеджер published.
+        """
+        objects = models.Manager() # менеджер, применяемый по умолчанию
+        published = PublishedManager() # конкретно-прикладной менеджер
+
+
+
+
+
+Следующей ниже командой снова запустите сервер разработки из команд-
+ной оболочки:
+        python manage.py shell
+        from blog.models import Post
+        Post.published.filter(title__startswith='Who')
+        
+        <QuerySet [<Post: Who Let The Dogs Out>]>
+Для того чтобы получить результаты этого набора запросов, проверьте,
+чтобы поле status было равным значению PUBLISHED в объекте Post, поле title
+которого начинается со слова Who.
+
+
+
+СОЗДАНИЕ ПРЕДСТАВЛЕНИЙ СПИСКА ПОСТОВ
+И ДЕТАЛЬНОЙ ИНФОРМАЦИИ О ПОСТЕ
+views.py
+
+from django.shortcuts import render
+from .models import Post
+
+
+        def post_list(request):
+            posts = Post.published.all()
+            return render(request,
+                          'blog/post/list.html',
+                          {'post': posts})
+                          
+
+        # представление одиночного поста
+        def post_detail(request, id):
+            try:
+                post = Post.published.get(id=id)
+
+            # исключение Http404, чтобы вернуть ошибку HTTP с кодом 
+            # состояния, равным 404, если возникает исключение DoesNotExist, 
+            # то есть модель не существует, поскольку результат не найден.
+            except Post.DoesNotExist:
+                raise Http404("No post found.")
+            
+            return render(request,
+                          'blog/post/detail.html',
+                          {'post': post})                          
+
+
+тоже самое но с ПРИМЕНЕНИЕ ФУНКЦИИ СОКРАЩЕННОГО ДОСТУПА GET_OBJECT_OR_404()
+
+        from django.shortcuts import render, get_object_or_404
+        from .models import Post
+        from django.http import Http404
+
+
+        # представления списка опубликованных постов на странице
+        def post_list(request):
+            posts = Post.published.all()
+            return render(request,
+                          'blog/post/list.html',
+                          {'posts': posts})
+
+
+        # представление одиночного поста
+        def post_detail(request, id):
+            # try:
+            #     post = Post.published.get(id=id)
+
+            # # исключение Http404, чтобы вернуть ошибку HTTP с кодом 
+            # # состояния, равным 404, если возникает исключение DoesNotExist, 
+            # # то есть модель не существует, поскольку результат не найден.
+            # except Post.DoesNotExist:
+            #     raise Http404("No post found.")
+
+            # тоже самое, но с использованием ф-ции сокращенного доступа get_object_or_404
+            post = get_object_or_404(Post,
+                                     id=id,
+                                     status=Post.Status.PUBLISHED)
+            
+            return render(request,
+                          'blog/post/detail.html',
+                          {'post': post})
+
+
+ДОБАВЛЕНИЕ ШАБЛОНОВ URL-АДРЕСОВ ПРЕДСТАВЛЕНИЙ
+создайте файл urls.py
+        from django.urls import path
+        from .import views
+
+
+        app_name = 'blog'
+        urlpatterns = [
+            path('', views.post_list, name='post_list'),
+            path('<int:id>/', views.post_detail, name='post_detail'),
+        ]
+
+Для захвата значений из URL-адреса используются угловые скобки.
+Для конкретного сопоставления и возврата
+целого числа используются конверторы путей, такие как <int:year>. Напри-
+мер, <slug:post> будет, в частности, совпадать со слагом
+
+->      """
+        Создание файла urls.py для каждого приложения – это наилучший способ
+        сделать ваши приложения пригодными для реиспользования в других про-
+        ектах.
+        """
+        
+
+main urls.py
+        from django.contrib import admin
+        from django.urls import path, include
+
+        urlpatterns = [
+            path('admin/', admin.site.urls),
+            path('blog/', include('blog.urls', namespace='blog')),
+        ]
+
+
+СОЗДАНИЕ ШАБЛОНОВ ПРЕДСТАВЛЕНИЙ
+
+        templates/
+                blog/
+                        base.html
+                        post/
+                                list.html
+                                detail.html
+
+        • шаблонные теги управляют прорисовкой шаблона и выглядят как 
+        {%tag %};
+        • шаблонные переменные заменяются значениями при прорисовке шаб-
+лона и выглядят как 
+        {{ variable }};
+        • шаблонные фильтры позволяют видоизменять отображаемые перемен-
+        ные и выглядят как 
+        {{ variable|filter }}.
+
+
+
+
+Чт 04 мая 2023 15:17:57 
+
+СОЗДАНИЕ БАЗОВОГО ШАБЛОНА
+base.html
+        {% load static %}
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                {% block title %}
+                {% endblock %}
+            </title>
+
+            <link href="{% static "css/blog.css" %}"  rel="stylesheet">
+
+        </head>
+        <body>
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            <div id="sidebar">
+                <h2>My blog</h2>
+                <p>This is my blog.</p>
+            </div>
+            
+        </body>
+        </html>
+
+Тег {% load static %} сообщает Django, что нужно загрузить статические
+шаблонные теги (static), предоставляемые приложением django.contrib.
+staticfiles, которое содержится в настроечном параметре INSTALLED_APPS.
+
+каталог static/blog.css я загрузил готовый
+https://github.com/PacktPublishing/Django-4-by-example/tree/main/Chapter01/mysite
+
+
+СОЗДАНИЕ ШАБЛОНА СПИСКА ПОСТОВ
+post/list.html
+
+       {% extends "blog/base.html" %}
+
+        {% block title %}
+            My blog
+        {% endblock %}
+
+        {% block content %}
+            <h1>My blog</h1>
+            {% for post in posts %}
+                <h2>            
+                    <a href="{% url 'blog:post_detail' post.id %}">
+                        {{ post.title }}
+                    </a>            
+                </h2>
+
+                <p class="date">
+                    Published {{ post.publish }} by {{ post.author }}
+                </p>
+
+                {{ post.body|truncatewords:30|linebreaks }}
+            {% endfor %}
+        {% endblock %}
+
+        <!-- 
+            два шаблонных фильтра: 
+            truncatewords усекает значение до указанного числа слов, а 
+            linebreaks конвертирует результат в разрывы строк в формате HTML. 
+        -->
+
+        Шаблонный тег {% extends %} сообщает Django, что надо наследовать от
+        шаблона blog/base.html. Затем заполняются блоки title и content базового
+        шаблона. Посты прокручиваются в цикле, и их заголовок, дата, автор и тело
+        отображаются на странице, включая ссылку в заголовке на подробный URL-
+        адрес поста. URL-адрес формируется с использованием предоставляемого
+        веб-фреймворком Django шаблонного тега {% url %}.
+        Этот шаблонный тег позволяет формировать URL-адреса динамически по
+        их имени. Мы используем blog:post_detail, чтобы ссылаться на URL-адрес
+        post_detail в именном пространстве blog. Мы передаем необходимый пара-
+        метр post.id, чтобы сформировать URL-адрес для каждого поста.
+
+        """
+        Для формирования URL-адресов в своих шаблонах следует всегда использо-
+        вать шаблонный тег {% url %}, а не писать жестко привязанные URL-адреса.
+        Такой подход упростит техническое сопровождение URL-адресов в будущем.
+        """
+
+
+ДОСТУП К ПРИЛОЖЕНИЮ
+
+$ ./manage.py runserver
+http://127.0.0.1:8000/blog/
+
+
+СОЗДАНИЕ ШАБЛОНА ДЕТАЛЬНОЙ ИНФОРМАЦИИ О ПОСТЕ
+post/detail.html:
+        {% extends "blog/base.html" %}
+
+        {% block title %}
+            {{ post.title }}
+        {% endblock %}
+
+        {% block content %}
+            <h1>{{ post.title }}</h1>
+
+            <p class="date">
+                Publidhed {{ post.publish }} by {{ post.author }}
+            </p>
+            {{ post.body|linebreaks }}    
+        {% endblock %}
+
+$ ./manage.py runserver
+кликнуть по одному из заголовков постов, чтобы просмотреть детальную информацию о посте.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+продолжить 70 стр       
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
