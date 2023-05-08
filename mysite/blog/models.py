@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 """
 Простой блог
@@ -23,13 +24,18 @@ class Post(models.Model):
 
         
     title = models.CharField(max_length=250)
+
     """
     slug: поле SlugField, которое транслируется в столбец VARCHAR в базе дан-
     ных SQL. Слаг – это короткая метка, содержащая только буквы, цифры,
     знаки подчеркивания или дефисы. мы будем использовать поле slug для формиро-
     вания красивых и дружественных для поисковой оптимизации URL-
-    адресов постов блога;"""
-    slug = models.SlugField(max_length=250)
+    адресов постов блога;
+    при использовании параметра unique_for_date поле slug должно
+    быть уникальным для даты, сохраненной в поле publish.
+    """
+    slug = models.SlugField(max_length=250,
+                            unique_for_date='publish')
 
     """
     взаимосвязь многие-к-одному, означающую, что каждый пост написан пользователем и пользо-
@@ -87,3 +93,29 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+    '''
+    Функция reverse() будет формировать URL-адрес динамически, применяя
+    имя URL-адреса, определенное в шаблонах URL-адресов. Мы использова-
+    ли именное пространство blog, за которым следуют двоеточие и URL-адрес
+    post_detail. Напомним, что именное пространство blog определяется в глав-
+    ном файле urls.py проекта при вставке шаблонов URL-адресов из blog.urls.
+    URL-адрес post_detail определен в файле urls.py приложения blog. Результи-
+    рующий строковый литерал, blog:post_detail, можно использовать глобально
+    в проекте, чтобы ссылаться на URL-адрес детальной информации о посте.
+    Этот URL-адрес имеет обязательный параметр – id извлекаемого поста бло-
+    га. Идентификатор id объекта Post был включен в качестве позиционного
+    аргумента, используя параметр args=[self.id].    
+    '''
+    # def get_absolute_url(self):
+    #     return reverse('blog:post_detail',
+    #                    args=[self.id])
+    
+    # представление одиночного поста (s2) с использованием /blog/yeat/month/day/slug/     
+    def get_absolute_url(self):
+        return reverse('blog:post_detail',
+                       args=[self.publish.year,
+                             self.publish.month,
+                             self.publish.day,
+                             self.slug])
