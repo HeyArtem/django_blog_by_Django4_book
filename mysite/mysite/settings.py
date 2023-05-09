@@ -164,3 +164,19 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Конфигурация сервера электронной почты
+
+# Если вы не можете использовать SMTP-сервер
+# Используя этот параметр, Django будет выводить все электронные письма
+# в оболочку, не отправляя их. Это бывает очень удобно при тестировании
+# своего приложения без SMTP-сервера.
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'your_account@gmail.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+

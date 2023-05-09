@@ -6,7 +6,10 @@ from . import views
 app_name = 'blog'
 
 urlpatterns = [
-    path('', views.post_list, name='post_list'),
+    # path('', views.post_list, name='post_list'),
+
+    # представление на основе класса
+    path('', views.PostListView.as_view(), name='post_list'),
 
     # открыть пост по id
     # path('<int:id>/', views.post_detail, name='post_detail'),
@@ -15,4 +18,8 @@ urlpatterns = [
     path('<int:year>/<int:month>/<int:day>/<slug:post>/',
          views.post_detail,
          name='post_detail'),
+    
+    # Отправка электронных писем
+    path('<int:post_id>/share/',
+         views.post_share, name='post_share'),
 ]
