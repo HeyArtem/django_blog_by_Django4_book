@@ -22,4 +22,8 @@ urlpatterns = [
     # Отправка электронных писем
     path('<int:post_id>/share/',
          views.post_share, name='post_share'),
+
+     # комментирование постов
+     path('<int:post_id>/comment/',
+          views.post_comment, name='post_comment')
 ]
