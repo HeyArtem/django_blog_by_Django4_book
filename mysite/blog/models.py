@@ -2,9 +2,10 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from taggit.managers import TaggableManager
 
 """
-Простой блог
+Простой блог по книге 
 
 """
 
@@ -12,8 +13,8 @@ from django.urls import reverse
 class PublishedManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset()\
-        .filter(status=Post.Status.PUBLISHED)
-    
+        .filter(status=Post.Status.PUBLISHED) 
+
 
 class Post(models.Model):
 
@@ -56,6 +57,7 @@ class Post(models.Model):
                               choices=Status.choices,
                               default=Status.DRAFT)
     
+    
     """
     Первый объявленный в модели менеджер становится менеджером, ко-
     торый используется по умолчанию. Для того чтобы указать другой такой
@@ -69,6 +71,7 @@ class Post(models.Model):
     """
     objects = models.Manager() # менеджер, применяемый по умолчанию
     published = PublishedManager() # конкретно-прикладной менеджер
+    tags = TaggableManager()
 
 
     """

@@ -46,6 +46,7 @@ ALLOWED_HOSTS не применяется при включенном режим
 """
 ALLOWED_HOSTS = []
 
+SITE_ID = 1
 
 # Application definition
 """
@@ -68,6 +69,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig', #Класс BlogConfig – это конфигурация приложения.
+    'taggit',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    'django.contrib.postgres', # Простые операции поиска
 ]
 
 MIDDLEWARE = [
@@ -115,13 +120,25 @@ DATABASES – словарь, содержащий настроечные пар
 не указана иная.
 """
 
-# Определение типа БД
+# # Определение типа БД
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+# # новая БД postgresql NAME': 'blog', 'USER': 'blog',
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',  
+        'NAME': 'blog',
+        'USER': 'blog',
+        'PASSWORD': 'DBuser',
+        'HOST': 'localhost',      
     }
 }
+
 
 
 # Password validation

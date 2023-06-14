@@ -3,6 +3,7 @@ from .models import Post, Comment
 
 
 # admin.site.register(Post)
+
 """
 В этот класс можно вставлять информацию о том, как показывать модель на сайте и как с ней взаимодействовать.
 Атрибут list_display позволяет задавать поля модели, которые вы хотите показывать на странице списка объектов администрирования. 
@@ -10,7 +11,7 @@ from .models import Post, Comment
 """
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['title', 'slug', 'author', 'publish', 'status', 'created']
+    list_display = ['title', 'slug', 'author', 'publish', 'status', 'created',]
 
     # правая панель позволяет фильтровать результаты по полям, включенным в атрибут list_filter
     list_filter = ['status', 'created', 'publish', 'author']
@@ -36,4 +37,6 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = ['name', 'email', 'post', 'created', 'active']
     list_filter = ['active', 'created', 'updated']
     search_fields = ['name', 'email', 'body']
+
+
 

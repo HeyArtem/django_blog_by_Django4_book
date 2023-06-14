@@ -1,0 +1,1445 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-05-03T22:18:39.451Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Разнообразный и богатый",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-05-03T22:19:28.178Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Повседневная практика показывает",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-05-03T22:20:05.872Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Идейные соображения",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-05-04T00:03:46.532Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Who Let The Dogs Out",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-05-04T15:14:38.879Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Почему мозг любит всё новое",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-05-04T15:43:03.281Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Появился бесплатный ChatGPT с доступом к GPT-4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-05-04T15:43:36.729Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Появился бесплатный ChatGPT с доступом к GPT-4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-05-04T16:10:11.681Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Приёмная для мошенников: как преступники оставляют отзывы на VC и Banki.ru — расследование Тинькофф",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-05-04T16:11:56.785Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Российские учёные создали альтернативу экранам OLED с яркостью в три раза выше",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-05-04T16:20:09.232Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Poco X4 GT",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-05-08T00:57:36.987Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Разнообразный и богатый",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-05-08T15:42:22.281Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Почему мозг любит всё новое",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-05-08T15:42:29.460Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Who Let The Dogs Out",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-05-08T15:42:35.237Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Разнообразный и богатый",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-05-08T15:42:40.190Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Российские учёные создали альтернативу экранам OLED с яркостью в три раза выше",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-05-08T15:42:46.151Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Появился бесплатный ChatGPT с доступом к GPT-4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-05-08T15:49:21.671Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Почему мозг любит всё новое",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-05-08T15:49:28.980Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Who Let The Dogs Out",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-05-08T15:49:34.083Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Разнообразный и богатый",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-05-08T15:49:45.661Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Российские учёные создали альтернативу экранам OLED с яркостью в три раза выше",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-05-08T15:49:51.007Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Появился бесплатный ChatGPT с доступом к GPT-4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-05-08T20:44:00.406Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Повседневная практика показывает",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-05-09T16:12:17.905Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Comment by Art2 on Poco X4 GT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-05-09T16:12:53.706Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Comment by Art2 on Poco X4 GT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-05-09T16:16:37.121Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Comment by Art on Poco X4 GT",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-05-09T16:16:41.354Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Comment by Art2 on Poco X4 GT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-05-09T16:17:50.278Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Comment by Art on Poco X4 GT",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-06-06T23:07:35.087Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "music",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-06-06T23:07:49.037Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "jazz",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-06-06T23:08:34.206Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "django",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-06-06T23:14:15.956Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Poco X4 GT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-06-07T00:33:29.173Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Приёмная для мошенников: как преступники оставляют отзывы на VC и Banki.ru — расследование Тинькофф",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-06-07T00:34:02.042Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Идейные соображения",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-06-07T13:13:43.224Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Эксперты утверждают, что убеждённость некоторых оппонентов процветает, как ни в чем не бывало",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-06-07T13:15:02.414Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Разнообразный и богатый",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2023-06-07T21:41:48.895Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Markdown post",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-06-07T21:43:43.276Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Markdown post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-06-07T21:47:28.520Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "markdown post without Markdown",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-06-07T21:50:37.299Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "markdown post without Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2023-06-07T21:51:33.035Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "markdown post without Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2023-06-07T21:53:24.246Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "markdown post without Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-06-07T22:55:51.599Z",
+    "user": 2,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "localhost:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$Rrrkin2UiI5Ug1PrFMrQzH$/3TUBDuiEyVlBMAiXRtrRuzSNN/foJG/RsjJzDgdOSo=",
+    "last_login": "2023-06-06T22:42:15.658Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-05-03T22:16:59.307Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l11xq0eib0m2e75zxzqy8jb6w6uql2f6",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSEw5WFduu83kBkGpGogKe3K-O_apAvd3nPOfYmA21rC1tMSZhYXocXpdyOMj1R3wHestyZjq-syk9wVedAup8bpeT3cv4OCvXxrmwiJHUN0SGYA44zKMXo2ADonBo8qK-0HNKAGOyLQGWxWli14F0fx_gD2rze0:1ptFR8:ZakXvA-EXHHcJc9dMlfPsYSEnplClUYwcreWX_nu5zs",
+    "expire_date": "2023-05-14T22:22:30.596Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qe7wfohnpeplua7zw9lndjcv5id6n1zc",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8oS7d-w1kYAapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKM7MwUO_1uCfKD2g7wDu3Wee5tXebEd4UfdPBrR3peDvfvoMKo37pMftJBekMGRfba-pSCw4RIIVBWRgjpS_YASbpSIOhAxWYnpVFoAdn7A-tPOG8:1q6fNX:qobxM4BFCUi4r47eujUCjNbiTrWp4cp7sL9ztZ1yGZk",
+    "expire_date": "2023-06-20T22:42:15.663Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rj9gpy6ksbx8b5awfmgdegowhchyfi4w",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8oS7d-w1kYAapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKM7MwUO_1uCfKD2g7wDu3Wee5tXebEd4UfdPBrR3peDvfvoMKo37pMftJBekMGRfba-pSCw4RIIVBWRgjpS_YASbpSIOhAxWYnpVFoAdn7A-tPOG8:1puKnD:Mwzl6RP2DsFoPKaD6cVPypqlaQ_VnnJelniFM8v_Cpk",
+    "expire_date": "2023-05-17T22:17:47.575Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "Разнообразный и богатый",
+    "slug": "raznoobraznyj-i-bogatyj",
+    "author": 2,
+    "body": "Разнообразный и богатый опыт рамки и место обучения кадров представляет собой интересный эксперимент проверки направлений прогрессивного развития. Равным образом новая модель организационной деятельности позволяет выполнять важные задания по разработке модели развития. Товарищи! рамки и место обучения кадров в значительной степени обуславливает создание новых предложений.",
+    "publish": "2023-04-01T22:17:56Z",
+    "created": "2023-05-03T22:18:39.450Z",
+    "updated": "2023-06-07T13:15:02.410Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "Повседневная практика показывает",
+    "slug": "povsednevnaya-praktika-pokazyvaet",
+    "author": 2,
+    "body": "Идейные соображения высшего порядка, а также укрепление и развитие структуры требуют определения и уточнения дальнейших направлений развития. С другой стороны рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки форм развития.",
+    "publish": "2023-05-01T22:18:47Z",
+    "created": "2023-05-03T22:19:28.177Z",
+    "updated": "2023-05-08T20:44:00.405Z",
+    "status": "DF"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "Идейные соображения",
+    "slug": "idejnye-soobrazheniya",
+    "author": 2,
+    "body": "Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Задача организации, в особенности же новая модель организационной деятельности требуют определения и уточнения направлений прогрессивного развития.",
+    "publish": "2023-05-03T22:19:35Z",
+    "created": "2023-05-03T22:20:05.871Z",
+    "updated": "2023-06-07T00:34:02.037Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Who Let The Dogs Out",
+    "slug": "who-let-the-dogs-out",
+    "author": 2,
+    "body": "На самом деле - песня о феминизме и ответе женщин мужчинам на обидные прозвища, которыми те их награждают!\r\n\r\nАвтор песни Анслем Дуглас признал, что песня не имеет ничего общего с собаками и на самом деле имеет феминистскую тему. В интервью, которое было опубликовано на его веб-сайте, он сказал: «Это песня, нападающая на людей. Я скажу вам почему. Лирика песни гласит: \"Вечеринка была хорошей, вечеринка была классной\". Когда я сказал слово \"вечеринка\", я был метафоричен. Это на самом деле означает, что дела идут отлично. \"Йиппи-Йи-Йо\" - это все счастливы, верно? \"И у всех был бал\". Жизнь шла великолепно. \"Пока мужчины не начнут называть меня\"/\"А потом девушки откликнутся на зов\". Таким образом, мужчины стали обзывать женщин грязными словами, как будто лаять на них и женщины стали отвечать \"Кто выпустил собак\". И мы начали называть мужчин собаками. Это действительно песня о человеке\".",
+    "publish": "2023-02-01T23:59:14Z",
+    "created": "2023-05-04T00:03:46.531Z",
+    "updated": "2023-05-08T15:49:28.978Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Почему мозг любит всё новое",
+    "slug": "pochemu-mozg-lyubit-vsyo-novoe",
+    "author": 2,
+    "body": "Дедушка Ленин завещал не переставать учится. Но у одних всё в порядке с тягой к познанию, другим же приходится искать её на дне глубоких карманов. И причина — в разнице мозга.\r\nПриродное любопытство\r\nВообще стремление узнавать — это базовая потребность всего живого. Вы стучите по аквариуму, и рыбка поворачивается навстречу источнику звука. Ещё И.Павлов исследовал это явление, назвав его рефлексом «Что такое».\r\n\r\nВ этом стремлении нет удивительного, потому как знание помогает выживать и адаптироваться к меняющейся реальности.\r\n\r\nПриродное любопытство — это набор программ, когда вы;\r\n\r\nповорачиваете голову в сторону объекта (средний мозг);\r\nидёте к нему (двигательный центр таламуса);\r\nберёте в руки, рассматриваете (двигательная лобная кора);\r\nназываете объект словом (кора больших полушарий).\r\nВ результате формируется информационно-речевая модель мира, ваше знание, которое позволяет существовать и развиваться. И на всех этих этапах вас ведёт дофамин.\r\n\r\nДофаминовые нейроны\r\nДофамин — это гормон и нейромедиатор, который даёт положительные эмоции. Эволюционно дофамин помог закрепить желаемое поведение. Поэтому всегда, когда вы делаете что-то, что для вас условно полезно, в мозг будет выбрасываться дофамин.\r\n\r\nКак мы уже разобрались, исследовательская деятельность и обучение — это базовая древняя программа, которая нужна, чтобы выжить. Поэтому в ней и участвует дофамин.\r\n\r\nВам нравится учиться, так как он даёт:\r\n\r\nрадость новизны,\r\nрадость творчества,\r\nудовольствие от познания себя и мира.\r\nПри этом вы получите дофамин и от переработки уже накопленного знания. Например, когда создали новую ассоциацию, рифму, решили и придумали нестандартную задачу.\r\nТо, насколько активны в мозге дофаминовые нейроны, и определяет вашу тягу к познанию. Люди с таким мозгом более ориентированы во вне и открыты для нового.\r\n\r\nЕсли же мозг менее восприимчивый к дофамину, возможны:\r\n\r\nдепрессии,\r\nзависимости.\r\nДело в том, что человек с таким мозгом будет по умолчанию ощущать меньше радости и будет искать какие-либо другие источники положительных эмоций (в еде, шоппинге, азартных играх, экстремальных видах спорта и так далее).\r\n\r\nПольза и вред дофамина\r\nПриродное любопытство нам на руку, когда оно нацеленное и осмысленное. Новое знание нужно, чтобы лучше ориентироваться в жизни. Поэтому оно должно применяться, но сначала перейти из краткосрочного хранения в долгосрочное. Это непростой энергоёмкий процесс, который мозг серьёзно фильтрует и ограничивает.\r\n\r\nДля него нужны:\r\n\r\nбазовая эмоция (информация значима для вас);\r\nповторы,\r\nфокус и концентрация.\r\nНо дофаминовая система не различает осмысленное полезное знание и просто новую информацию. Например, новости, скроллинг ленты в социальных сетях и забавные видео — это всё источник дофамина для него. При этом такой фастфуд не делает ваши знания глубже и никак не откладывается в долгосрочной памяти. И здесь мозг попадает в ловушку.\r\n\r\nМы знаем, что он любит экономить и оптимизировать и будет выбирать самый простой способ получить дофамин. Вы будете употреблять информационный фастфуд, тратить время, но не поменяете свою картину мира. Чтобы подобные занятия проносили хоть какую-то пользу, попробуйте:\r\n\r\nрассказывать и обсуждать,\r\nписать развёрнутые комментарии.\r\nИ вторая опасность, которую потенциально может нести дофамин — это его заменители. Например, амфетамин по действию похож на дофамин, но разрушает дофаминовые синапсы. С ним человек может перестать стремиться что-либо делать в реальном мире: зачем, если можно просто принять препарат. Использует дофаминовые системы мозга и кокаин, ещё более серьёзное вещество, которое вызывает сильные зависимости.\r\n\r\nОбъём дофаминовых рецепторов определяется генетически, но только вы решаете, каким будет ваш мозг. Старайтесь узнавать как можно больше нового, пробуйте, создавайте нейронные связи и получайте заслуженный качественный дофамин, который будет помогать вам развиваться.",
+    "publish": "2022-12-01T15:09:28Z",
+    "created": "2023-05-04T15:14:38.877Z",
+    "updated": "2023-05-08T15:49:21.670Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "Появился бесплатный ChatGPT с доступом к GPT-4",
+    "slug": "poyavilsya-besplatnyj-chatgpt-s-dostupom-k-gpt-4",
+    "author": 2,
+    "body": "На GitHub появился проект GPT4Free, созданный разработчиком под ником xtekky. Он представляет собой бесплатный и практически неограниченный доступ к ChatGPT с моделями GPT-4 и GPT-3.5.\r\n\r\nДля создания GPT4Free xtekky использовал эксплойт, обнаруженный им методом реверс-инжениринга, когда разработчик искал, какие онлайн-сервисы работают с чат-ботом.\r\n\r\nНайденная уязвимость позволила GPT4Free не обходить механизмы платного доступа, а «обманывать» API ChatGPT. Всё дело в том, что GPT4Free маскирует запросы к платформе OpenAI так, что они якобы поступают от ресурсов, к которым привязаны платные учётные записи: поисковой системы You.com, сервиса для написания текстов WriteSonic и чат-бота Quora Poe. То есть GPT4Free позволяет пользоваться платным API OpenAI за счёт этих компаний.\r\n\r\nНа данный момент ни OpenAI, ни GitHub не заблокировали проект GPT4Free, в то время как список сервисов, запросы которых он подделывает, насчитывает около десятка позиций.\r\n\r\nСам xtekky утверждает, что его проект предназначен лишь для образовательных и экспериментальных целей, при этом, несмотря на все риски, в том числе юридические, он будет стараться продолжать над ним работу.\r\n\r\nРеверс-инжиниринг — это сфера, которая всегда мне очень нравилась, это как вызов для меня. Сначала это было развлечение, но теперь — предоставление альтернативы людям, которые не могут использовать GPT-4/3.5, — отметил разработчик.\r\nВоспользоваться GPT4Free на данный момент можно на этом сайте.\r\nhttps://chat.chatbot.sex/chat/",
+    "publish": "2023-04-30T15:34:28Z",
+    "created": "2023-05-04T15:43:03.280Z",
+    "updated": "2023-05-08T15:49:51.005Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 11,
+  "fields": {
+    "title": "Приёмная для мошенников: как преступники оставляют отзывы на VC и Banki.ru — расследование Тинькофф",
+    "slug": "priyomnaya-dlya-moshennikov-kak-prestupniki-ostavlyayut-otzyvy-na-vc-i-bankiru-rassledovanie-tinkoff",
+    "author": 2,
+    "body": "Тинькофф Защита раскрыла новые манипулятивные схемы мошенников, которые под видом клиентов оставляли жалобы на VC.ru и Banki.ru, чтобы обмануть сотрудников банка и украсть деньги клиентов.\r\n\r\nБанковские мошенники начали использовать в своих схемах популярные сайты с отзывами о финансовых организациях — VC.ru и Banki.ru. С их помощью они пытаются обмануть не только клиентов, но и сам банк, чтобы украсть денежные средства. Новую схему раскрыла Тинькофф Защита. Злоумышленники создают негативные фейковые отзывы в адрес Тинькофф от имени реальных клиентов, либо убеждают самих клиентов оставлять негативные отзывы, чтобы получить доступ к их деньгам.\r\n\r\nVC.ru и Banki.ru как инструмент давления мошенников на банк\r\nКлиенты российских банков используют VC.ru, Banki.ru и другие похожие UGC-сайты для написания отзывов на ту или иную проблему. Служба поддержки клиентов Тинькофф в соцсетях постоянно мониторит отзывы на этих сайтах, чтобы оперативно помочь в решении проблемы или ответить на вопросы.\r\n\r\nНо нередко возможность оставить отзыв на крупном отраслевом ресурсе и ввести в заблуждение посетителей сайта используется недобросовестными клиентами в своих манипулятивных целях. Зная это, мошенники начали использовать VC.ru и Banki.ru также для своих преступных задач.\r\n\r\nЭта схема начала активно реализовываться в начале весны 2023 года.\r\n\r\nСначала мошенники с помощью методов социальной инженерии убеждают клиентов Тинькофф перевести им свои деньги, либо получают доступ к их личному кабинету для самостоятельного проведения операции. Однако такие денежные переводы имеют особые признаки, по которым служба фрод-мониторинга Тинькофф Защиты выявляет их и блокирует — чтобы проверить, все ли в порядке с этой транзакцией. И в итоге — благодаря алгоритмам Тинькофф Защиты злоумышленники не могут получить деньги.\r\n\r\nСоциальная инженерия — совокупность психологических манипуляций, которые мошенники используют в отношении клиентов банков, чтобы получить доступ к персональным данным, необходимым для проведения операции, либо убеждают клиентов самостоятельно сделать перевод.\r\nВ данном случае злоумышленники привлекали своих потенциальных жертв через сайты ложных инвестплатформ, на которых предлагали выгодные инструменты для инвестиций с высокой доходностью в короткие сроки. При этом мошеннические страницы копируют сайты реальных брокеров и биржи. «Покупка» акций или криптовалюты оформляется как обыкновенный перевод на карту физлица — и таким образом деньги попадают мошенникам.\r\n\r\nЧтобы попытаться разблокировать переводы, мошенники начали использовать VC.ru и Banki.ru и публиковать отзывы без проверки личности автора — чтобы информационно повлиять на службы поддержки банков и заставить разблокировать заблокированные операции.\r\n\r\nПри этом риторика у таких постов обычно нарочито скандальная, как во всем известном фильме в духе «Помогите, хулиганы зрения лишают!»\r\n\r\nОбычно мошенники публикуют посты на VC.ru и Banki.ru от лица самих клиентов, но есть случаи, когда они умудряются убеждать самих клиентов писать отзывы на этих сайтах. Тут они давят на жалость, проявляют агрессию в отношении банка, а также вводят в заблуждение читателей этих порталов. Все для того, чтобы сбить с толку службу безопасности и поддержку банка и убедить её поскорее разблокировать операцию. И в конечном итоге — украсть деньги.\r\n\r\nМошенник меняет профессию\r\nВот как выглядят поддельные отзывы злоумышленников якобы от лица клиентов. Важный момент — на момент публикации материала на 13:00 26.04.2023 г. этот и другие цитируемые здесь статьи были активны, так как прошли модерацию VC и Banki.ru.",
+    "publish": "2023-05-04T16:09:35Z",
+    "created": "2023-05-04T16:10:11.680Z",
+    "updated": "2023-06-07T00:33:29.168Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 12,
+  "fields": {
+    "title": "Российские учёные создали альтернативу экранам OLED с яркостью в три раза выше",
+    "slug": "rossijskie-uchyonye-sozdali-alternativu-ekranam-oled-s-yarkostyu-v-tri-raza-vyshe",
+    "author": 2,
+    "body": "Команда инженеров из СПбПУ, университета ИТМО и Алферовского университета представила новую технологию изготовления экранов. Такие экраны имеют яркость, более чем в три раза превышающую яркость OLED-дисплеев.\r\n\r\nНовая технология создания экранов выполнена с использованием перовскита, недорогого и простого в производстве материала. Перовскитные экраны требуют в три раза меньше энергии, чем существующие аналоги, что позволит продлить автономную работу мобильных устройств.\r\n\r\nСейчас эксперты тестируют экран-прототип, созданный по новой технологии. Благодаря использованию кремния, который уже давно используется в микроэлектронике, производство новых дисплеев будет значительно проще.\r\n\r\nОтмечается, что эффективность перовскитных дисплеев может превышать 90%, в то время как у дисплеев из органических материалов эффективность не превышает 25%. Уникальная архитектура кремниевой подложки служит отличным теплоотводчиком, предотвращая перегрев устройства и увеличивая его срок службы. Перовскитные светодиоды имеют высокую светопередачу, делая цвета более естественными для человеческого глаза.\r\n\r\nКроме того, учёные смогли отказаться от использования оксида индия-олова, ресурсы которого ограничены, и стоимость которого в будущем может вырасти. Перовскиты также могут использоваться в качестве источника энергии, подобно солнечным батареям, преобразуя свет в электричество. В ближайшее время ожидается начало промышленного применения технологий на основе перовскита, благодаря привлечению сторонних инвестиций.",
+    "publish": "2023-04-05T16:10:25Z",
+    "created": "2023-05-04T16:11:56.784Z",
+    "updated": "2023-05-08T15:49:45.660Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 13,
+  "fields": {
+    "title": "Poco X4 GT",
+    "slug": "poco-x4-gt",
+    "author": 2,
+    "body": "Техническая документация POCO X4 GT\r\nОписание\r\nXорошо\r\nМожно улучшить\r\nаккумулятор\r\nPowerfull SOC\r\nБыстрая зарядка\r\nНет Беспроводная зарядка\r\nНет воды и пыли защиты\r\nкачество камеры\r\nПодвиг Х4 GT – премиум смартфон среднего класса от бренда POCO. Он наследует классический дизайн и материалы для бранда, включая высококачественные стекло и пластик, а также поддержку важных аудио- и видео-форматов. Он также может похвастаться широкими возможностями по подключению к сети и большой батареей.\r\n\r\nМодель Poco X4 GT оснащена базовыми 6,6-дюймовым экраном LCD IPS с разрешением 1080x2460 (FHD +), частотой обновления 144 Гц, яркостью 500 cd/m² (тип), контрастностью 1400:1, поддержкой HDR10 и используемой поверхностью 84,7%. Для аудио Poco X4 GT оснащен стерео динамиками, Hi-Res Audio и Dolby Atmos. Он также имеет защиту Corning Gorilla Glass 5.\r\n\r\nВ плане хардвера Poco X4 GT оснащен восьмиядерным процессором MediaTek Dimensity 8100 Max (5 нм), 8 ГБ оперативной памяти LPDDR5 и 128 ГБ/256 ГБ встроенной памяти UFS 3.1. AnTuTu (v9) показывает показатель 824571. По словам производителей, в нем установлена система охлаждения, а также имеется сканер отпечатков пальцев.\r\n\r\nPoco X4 GT оснащена тройной камерой с 64 Мп стандартной Samsung Bright S5KGW1, широкоугольным объективом 8 Мп, макро объективом Omnivision OV02B10 и передней 16 Мп и оснащена другими полезными функциями, такими как Ultra wide angle 20° FOV и 4K Video.\r\n\r\nВ плане подключения Poco X4 GT поддерживает Bluetooth 5.3, две SIM-карты, NFC, аудиоразъем, Wi-Fi 6 (802.11ax), GPS (L1+L5) и ИК-порт. А также он имеет 5080 мАч батарею и 67 Вт быструю зарядку.\r\n\r\nИтак, коротко говоря, Poco X4 GT , это премиум - смартфон среднего класса, который имеет емкую батарею, мощный SOC, быструю зарядку и достаточно хорошую фотокамеру. Недостатки Poco X4 GT включают отсутствие беспроводной зарядки, защиты от влаги и пыли и несколько худшего качества фото, чем у более дорогих устройств.",
+    "publish": "2023-05-04T16:19:49Z",
+    "created": "2023-05-04T16:20:09.231Z",
+    "updated": "2023-06-06T23:14:15.950Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 14,
+  "fields": {
+    "title": "Эксперты утверждают, что убеждённость некоторых оппонентов процветает, как ни в чем не бывало",
+    "slug": "eksperty-utverzhdayut-chto-ubezhdyonnost-nekotoryh-opponentov-procvetaet-kak-ni-v-chem-ne-byvalo",
+    "author": 2,
+    "body": "В целом, конечно, консультация с широким активом требует от нас анализа прогресса профессионального сообщества. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Мы вынуждены отталкиваться от того, что внедрение современных методик выявляет срочную потребность анализа существующих паттернов поведения.",
+    "publish": "2023-04-12T13:12:16Z",
+    "created": "2023-06-07T13:13:43.214Z",
+    "updated": "2023-06-07T13:13:43.214Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 15,
+  "fields": {
+    "title": "Markdown post",
+    "slug": "markdown-post",
+    "author": 2,
+    "body": "This is a post formatted with markdown\r\n--------------------------------------\r\n\r\n*This is emphasized* and **this is more emphasized**.\r\n\r\nHere is a list:\r\n\r\n* One\r\n* Two\r\n* Three\r\n\r\nAnd a [link to the Django website](https://www.djangoproject.com/).",
+    "publish": "2023-06-07T21:40:32Z",
+    "created": "2023-06-07T21:41:48.882Z",
+    "updated": "2023-06-07T21:43:43.273Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 16,
+  "fields": {
+    "title": "markdown post without Markdown",
+    "slug": "markdown-post-without-markdown",
+    "author": 2,
+    "body": "- Это markdown пост, без применения markdown\r\n\r\n-qwe\r\n-qwe\r\n-qwe\r\n\r\n- qwe\r\n- qwe\r\n- qwe\r\n\r\n\r\n* ccskrf\r\n* ccskrf\r\n\r\nДальше ссылка \r\n\r\nhttps://www.logoground.com/logo.php?id=827797\r\n\r\nqqqqqqqqqqqqqqqqq wwwwwwwwwwwwwwwwwwwwww eeeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr ttttttttttttttttttt yyyyyyyyyyyyyyyyyyy\r\n\r\nУ маркдаун стиля есть минус. Если пост не в нем, то он не переносится и не работает правило переноса после како гото количества симвоолв",
+    "publish": "2023-06-07T21:44:29Z",
+    "created": "2023-06-07T21:47:28.516Z",
+    "updated": "2023-06-07T21:53:24.243Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 13,
+    "name": "Art",
+    "email": "Art@Art.com",
+    "body": "Poco X4 GT , это премиум - смартфон среднего класса, который имеет емкую батарею, \r\nЭто клево!!",
+    "created": "2023-05-09T16:08:15.690Z",
+    "updated": "2023-05-09T16:16:37.120Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 13,
+    "name": "Art2",
+    "email": "Art2@Art2.ur",
+    "body": "оснащена тройной камерой с 64 Мп стандартной S\r\n\r\nоснащена тройной камерой с 64 Мп стандартной S\r\n\r\nПочему ты html е ешь?",
+    "created": "2023-05-09T16:09:54.382Z",
+    "updated": "2023-05-09T16:16:41.354Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 13,
+    "name": "Art3",
+    "email": "Art3@Art3.as",
+    "body": "Комментарии кажется работают, но почему они криво раскрашиваются в детальной инфе?\r\n\r\nНеужели это так должно быть?",
+    "created": "2023-05-09T16:16:18.740Z",
+    "updated": "2023-05-09T16:16:18.740Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 13,
+    "name": "Art",
+    "email": "Art@Art.as",
+    "body": "Это четвертый комм\r\n\r\nчто бы увидеть задумку",
+    "created": "2023-05-09T16:17:50.278Z",
+    "updated": "2023-05-09T16:17:50.278Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "post": 16,
+    "name": "Art",
+    "email": "Art@art.bk",
+    "body": "Было бы не плохо, если вова знал маркдаун",
+    "created": "2023-06-07T21:49:02.290Z",
+    "updated": "2023-06-07T21:49:02.290Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "jazz",
+    "slug": "jazz"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "history",
+    "slug": "history"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "markdown",
+    "slug": "markdown"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 13
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 13
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 14
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 14
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 15
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 16
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "localhost:8000"
+  }
+}
+]
